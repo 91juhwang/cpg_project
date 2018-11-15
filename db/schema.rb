@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(version: 20181115200537) do
   end
 
   create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.datetime "release_date"
+    t.string "title", null: false
+    t.datetime "release_date", null: false
     t.integer "base_price"
     t.integer "format_id"
     t.datetime "created_at", null: false
